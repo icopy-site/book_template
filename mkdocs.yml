@@ -1,0 +1,29 @@
+site_name: 模板  # 网站名称
+site_url: https://template.icopy.site/  # 域名
+theme:
+  font: false
+  name: material
+  custom_dir: overrides
+  palette:  # 主题颜色选择
+    primary: black
+    accent: white
+  language: zh  # 语言
+  features:
+    - navigation.top
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
+
+plugins:
+  - search:
+      prebuild_index: true
+      lang: ja   #不支持中文，凑合用日语规则
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - toc:
+      toc_depth: 3  #右侧toc显示到几级标题
+      permalink: true
